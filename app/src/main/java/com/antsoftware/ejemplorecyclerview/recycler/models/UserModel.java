@@ -4,14 +4,14 @@ public class UserModel {
     private String id;
     private String name;
     private String age;
-    private String cedula;
+    private String registry;
 
     public UserModel(){}
-    public UserModel(String id,String name, String age, String cedula ) {
+    public UserModel(String id,String name, String age, String registry ) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.cedula = cedula;
+        this.registry = registry;
     }
 
     public String getId() {
@@ -38,11 +38,11 @@ public class UserModel {
         this.age = age;
     }
 
-    public String getCedula() {
-        return cedula;
+    public String getRegistry() {
+        return registry;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setRegistry(String registry) {
+        this.registry = registry;
     }
 }

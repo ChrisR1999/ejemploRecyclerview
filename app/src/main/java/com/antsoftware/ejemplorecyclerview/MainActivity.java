@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.antsoftware.ejemplorecyclerview.db.DBHelper;
 import com.antsoftware.ejemplorecyclerview.recycler.adapters.UserAdapter;
 import com.antsoftware.ejemplorecyclerview.recycler.models.UserModel;
 
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private DBHelper db;
     private RecyclerView myRecycler;
     private UserAdapter userAdapter;
     private Button refreshButton;
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
+        db = new DBHelper(this);
+
         myRecycler = (RecyclerView) findViewById(R.id.myRecycler);
         myRecycler.setHasFixedSize(true);
         myRecycler.setLayoutManager(new LinearLayoutManager(this));

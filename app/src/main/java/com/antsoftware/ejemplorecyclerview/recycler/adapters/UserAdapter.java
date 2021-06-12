@@ -32,12 +32,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         String id = userModelList.get(position).getId();
         String name = userModelList.get(position).getName();
         String age = userModelList.get(position).getAge();
-        String cedula = userModelList.get(position).getCedula();
+        String Registry = userModelList.get(position).getRegistry();
 
         holder.id.setText(id);
         holder.name.setText(name);
         holder.age.setText(age);
-        holder.cedula.setText(cedula);
+        holder.Registry.setText(Registry);
     }
 
     @Override
@@ -49,14 +49,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         private final TextView id;
         private final TextView name;
         private final TextView age;
-        private final TextView cedula;
+        private final TextView Registry;
 
         public ViewHolder(View v){
             super(v);
             id = (TextView) v.findViewById(R.id.tvID);
             name = (TextView) v.findViewById(R.id.tvName);
             age = (TextView) v.findViewById(R.id.tvAge);
-            cedula = (TextView) v.findViewById(R.id.tvCedula);
+            Registry = (TextView) v.findViewById(R.id.tvRegistry);
         }
     }
 }
