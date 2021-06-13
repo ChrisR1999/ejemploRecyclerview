@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">ejemploRecyclerview</string>
     <string name="idTitle">ID</string>
+    <string name="registryTitle">Registry</string>
     <string name="nameTitle">Name</string>
     <string name="ageTitle">Age</string>
-    <string name="cedulaTitle">Cedula</string>
+    <string name="subjectsTitle">Subjects</string>
     <string name="refreshButton">Refresh</string>
     <string name="cleanButton">Clean</string>
 </resources>

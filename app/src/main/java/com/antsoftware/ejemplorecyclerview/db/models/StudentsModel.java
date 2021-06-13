@@ -4,6 +4,7 @@ public class StudentsModel {
     private int registry;
     private String name;
     private int age;
+    private String subjects;
 
     public StudentsModel(){}
 
@@ -11,6 +12,12 @@ public class StudentsModel {
         this.registry = registry;
         this.name = name;
         this.age = age;
+    }
+    public StudentsModel(int registry, String name, int age, String subjects) {
+        this.registry = registry;
+        this.name = name;
+        this.age = age;
+        this.subjects = subjects;
     }
 
     public int getRegistry() {
@@ -35,5 +42,13 @@ public class StudentsModel {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(String subjects) {
+        this.subjects = subjects;
     }
 }
